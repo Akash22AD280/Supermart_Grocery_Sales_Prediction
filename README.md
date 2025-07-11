@@ -50,3 +50,20 @@ This notebook explores:
 | `Year` | int | Extracted feature: 2011 … 2015 |
 
 > **Tip:** If you add or drop columns during preprocessing, keep this table updated so new contributors know exactly what to expect.
+
+## 📝 Project Summary
+
+This project, **Supermart Grocery Sales Prediction**, applies machine learning techniques to forecast sales based on historical supermarket transaction data. The goal is to support better decision-making in inventory planning, customer segmentation, and revenue optimization.
+
+We explore and compare two regression models: **Linear Regression** and **Random Forest Regressor**, using real-world retail data. The Random Forest model demonstrated significantly better performance, achieving an R² score above 0.99 on cross-validation.
+
+### 🔑 Key Highlights
+
+- ✅ End-to-end pipeline: Data cleaning, feature engineering, model training & evaluation
+- 📈 Achieved **high predictive accuracy** with Random Forest
+- 📊 Compared models using **Mean Squared Error** and **R² Score**
+- 🔍 Identified **top sales drivers** using feature importance
+- 📁 Well-structured, reproducible notebook with modular code
+
+This repository includes the full notebook, dataset description, required libraries, and project documentation for easy reproduction or extension.
+
