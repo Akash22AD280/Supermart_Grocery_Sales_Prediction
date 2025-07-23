@@ -23,31 +23,27 @@ This notebook explores:
 | **Name** | Supermart Grocery Sales |
 | **Records** | 8 415 rows × 17 columns *(≈ 1.5 MB CSV)* |
 | **Time span** | Jan 2011 – Dec 2015 |
-| **Source** | Originally published on Kaggle (Supermarket Sales), curated for this project. |
-| **License** | Creative Commons Attribution 4.0 (CC BY 4.0) – please cite the original Kaggle dataset if you reuse it. |
 | **File(s)** | `data/supermart_grocery_sales.csv` |
 
 ### Column dictionary 📑
 
-| Column | Type | Description |
-|--------|------|-------------|
-| `Invoice_ID` | string | Unique transaction identifier |
-| `Date` | datetime | Purchase date (DD‑MM‑YYYY) |
-| `Branch` | category | A, B, C – three store branches |
-| `City` | category | Yangon, Mandalay, Naypyitaw |
-| `Customer_Type` | category | Member / Normal |
-| `Gender` | category | Male / Female |
-| `Product_Line` | category | 6 grocery departments (e.g. Beverages, Snacks) |
-| `Unit_Price` | float | Price per unit in USD |
-| `Quantity` | int | Number of units sold |
-| `Tax_5%` | float | 5 % VAT collected |
-| `Total` | float | Subtotal + VAT |
-| `Payment` | category | Cash / Credit card / E‑wallet |
-| `COGS` | float | Cost of goods sold |
-| `Gross_Income` | float | Revenue – COGS |
-| `Rating` | float | 1 – 10 customer rating |
-| `Month` | int | Extracted feature: numerical month |
-| `Year` | int | Extracted feature: 2011 … 2015 |
+| Column Name     | Data Type | Description                                              |
+| --------------- | --------- | -------------------------------------------------------- |
+| `Order ID`      | String    | Unique identifier for each order                         |
+| `Customer Name` | String    | Name of the customer placing the order                   |
+| `Category`      | Category  | Main product category (e.g., Furniture, Office Supplies) |
+| `Sub Category`  | Category  | Subcategory of the product (e.g., Chairs, Binders)       |
+| `City`          | Category  | City where the order was placed                          |
+| `State`         | Category  | State where the city is located                          |
+| `Region`        | Category  | Geographical region (e.g., East, West, South, Central)   |
+| `Order Date`    | DateTime  | Date of purchase in the format DD-MM-YYYY                |
+| `Sales`         | Float     | Sales value in USD                                       |
+| `Discount`      | Float     | Discount applied on the order                            |
+| `Profit`        | Float     | Net profit earned from the order                         |
+| `month_no`      | Integer   | Numerical month (1–12) extracted from `Order Date`       |
+| `Month`         | String    | Full name of the month (e.g., January, February)         |
+| `year`          | Integer   | Extracted year of the order (e.g., 2015, 2016)           |
+
 
 > **Tip:** If you add or drop columns during preprocessing, keep this table updated so new contributors know exactly what to expect.
 
